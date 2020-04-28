@@ -231,7 +231,42 @@ $ git saga -- readme.md (checking history of only one file)
 * a70e5ce first commit
 
 
-21. 
+21. Renaming a file in git command
+lets create a example.txt file and commit it in our git repo
+
+then rename it using command from exmple.txt to demo.txt
+       
+          old         new
+$ git mv example.txt demo.txt
+
+and u would observe the name would be changes in ur working directory 
+and then commit the change to commit it in ur repo as well 
+
+22. removing a file using git command
+
+$ git rm demo.txt
+rm 'demo.txt'
+
+u will observe file is already removed from working directory what about ur repo lets check status
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    demo.txt
+
+its in staging area so lets commit the change
+
+$ git commit -m "deleted demo.txt"
+[master d6bffed] deleted demo.txt
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 demo.txt
+
+manging files like renaming outside git seems like deleting the old file and adding a new file with different name to the git
+
+23. excluding unwanted files 
+
+
+
 
 
 
