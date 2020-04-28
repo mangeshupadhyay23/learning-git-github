@@ -265,8 +265,10 @@ manging files like renaming outside git seems like deleting the old file and add
 
 23. excluding unwanted files 
 
+create a file named .gitignore in your working directory 
 
-
+write the name of file to be ignored inside gitgnore file (garbage.txt) or u can exclude all .txt file by using (*.txt)
+ then add the .gitignore file in your repo and commit the changes in your repo now the file name in gitignore will be excluded and wont be added in ur repo 
 
 
 
