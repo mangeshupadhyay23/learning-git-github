@@ -270,6 +270,53 @@ create a file named .gitignore in your working directory
 write the name of file to be ignored inside gitgnore file (garbage.txt) or u can exclude all .txt file by using (*.txt)
  then add the .gitignore file in your repo and commit the changes in your repo now the file name in gitignore will be excluded and wont be added in ur repo 
 
+ 24. Finding differences between two commits there are  multiple ways of doing it 
+ diff command is highly flexible so go through
+ $ git help diff
+to check out the different ways of using diff command 
+
+ $ git diff <commit ID> HEAD 
+ 
+ simply gives difference between the input commit and the current repo (u can check commit ID by using alias.saga check in point 20)
+
+
+ 27. Special Markers(pointers) :
+
+ HEAD : last commit of current branch(it can be moved maunally to some other commit but thats an advance topic)
+
+
+
+ 26. BRANCHING AND MERGING
+
+ Branches are just timeline of commits
+ Branch names are just labels given to these diff branches or timelines
+
+ deletion only removes label or branch names
+
+ by default we work on the branch called master branch 
+
+ we can create another branch lets call it madeup branch and we make commits on our madeup branch ant then we can rejoin it with master branch using merging.
+ Now merging is of three types:
+
+ 1. The fast-forward merge :
+
+when no work is detected on master branch during the commits made in madeup branch
+git will simply apply the changes on master branch as if nothing happened
+
+ 2. Automatic merge :
+
+ when non confllicting commits are made on master branch when we were working on madeup branch 
+ then git preserves the madeup branch and make a merge commit on destination branch (in our case master branch) and that made up branch is preserved as well.
+
+ 3. Manual merge :
+
+ when git is unable to manage some conflict and automatic merge is not possible so u have to fix all conflicts before merging. once all conflicts are resolved it follows flow as automatic merge that is preserving madeup branch and creating a merge commit 
+
+27. Creating a branch
+ 
+ 
+
+
 
 
 
