@@ -230,8 +230,8 @@ u can even make addition to the alias commands like
     lets create a example.txt file and commit it in our git repo
 
 then rename it using command from exmple.txt to demo.txt
-  
- old new
+
+old new
 \$ git mv example.txt demo.txt
 
 and u would observe the name would be changes in ur working directory
@@ -318,33 +318,32 @@ Switched to a new branch 'madeup'
 all of your modification till now will be passed on to made up branch and new branch will emerge just after you last commit on your master branch
 
 we can see the difference between the last commit between branches by using
-$ git diff madeup master
+\$ git diff madeup master
 or we can check diff between to commits by passing commit IDs in place of branch names
 
-28. Switching between branches 
+28. Switching between branches
 
-currently we got two branches running one is master and second is madeup we can switch between branches by using chekcout command 
+currently we got two branches running one is master and second is madeup we can switch between branches by using chekcout command
 
-$ git checkout master
+\$ git checkout master
 Switched to branch 'master'
 Your branch is up to date with 'origin/master'.
 
-29. merging of branch 
+29. merging of branch
 
-switch to the branch in which u want to merge another branch and then use merge command 
+switch to the branch in which u want to merge another branch and then use merge command
 
-  $  git merge madeup(name of branch which u want to merge into your current branch)
-  Updating a294fea..9973e26
-  Fast-forward
-  readme.md | 47 +++++++++++++++++++++++++++++++++++++++++++++++
-  1 file changed, 47 insertions(+)
- 
+\$ git merge madeup(name of branch which u want to merge into your current branch)
+Updating a294fea..9973e26
+Fast-forward
+readme.md | 47 +++++++++++++++++++++++++++++++++++++++++++++++
+1 file changed, 47 insertions(+)
+
 this is a simple fast forward emrge
 
-now if u check git hsitory all are at same commit 
+now if u check git hsitory all are at same commit
 
 30. Deleting a branch
 
-$ git branch -d madeup(name if branch u want to delete)
+\$ git branch -d madeup(name if branch u want to delete)
 Deleted branch madeup (was 9973e26).
-
